@@ -30,7 +30,7 @@ export default function App() {
 
   useEffect(() => {
     setCategory(products[page + page * 4]?.category);
-  }, [page]);
+  }, [page, products]);
 
   useEffect(() => {
     fetchProducts();
@@ -69,8 +69,8 @@ export default function App() {
                 <span>
                   Rating:{" "}
                   {product.rating >= 3.5
-                    ? product.rating + " /5 " + "(good)"
-                    : product.rating + " /5" + " (bad)"}{" "}
+                    ? `${product.rating} /5 (good)`
+                    : `${product.rating} /5 (bad)`}{" "}
                 </span>
                 <span>
                   Avaliable:{" "}
