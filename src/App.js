@@ -75,8 +75,8 @@ export default function App() {
                 <span>
                   Avaliable:{" "}
                   {product.stock > 50
-                    ? product.stock + "("
-                    : product.stock + ")"}{" "}
+                    ? product.stock + "(Avaliable)"
+                    : product.stock + "(Hurry!)"}{" "}
                 </span>
               </div>
             </div>
